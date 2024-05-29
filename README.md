@@ -4,7 +4,9 @@
 <!-- default badges end -->
 # Reporting for React - Customize Parameter Editor in the Web Document Viewer
 
-This example customizes a default parameter editor and replaces a default editor for a specific parameter type with a custom editor.
+This example demonstrates two approaches to the parameter editor customization:
+- Specify editor options for a default parameter editor
+- Use a template to replace a default editor for a specific parameter type with a custom editor
 
 ![Web Document Viewer - Parameter Panel](images/screenshot.png)
 
