@@ -4,9 +4,9 @@
 <!-- default badges end -->
 # Reporting for React - Customize Parameter Editor in the Web Document Viewer
 
-This example demonstrates two approaches to the parameter editor customization:
-- Specify editor options for a default parameter editor
-- Use a template to replace a default editor for a specific parameter type with a custom editor
+This example demonstrates two ways to customize a parameter editor:
+- Specify editor options for a default parameter editor.
+- Use a template to replace a default editor for a specific parameter type.
 
 ![Web Document Viewer - Parameter Panel](images/screenshot.png)
 
@@ -31,11 +31,11 @@ npm install
 npm run dev
 ```
 
-Open `http://localhost:3000/` in your browser to view the result. 
+Enter the following URL in your browser to view the result: `http://localhost:3000/`. 
 
-## Implementation details
+## Implementation Details
 
-### Use Custom Editor Template
+### Use a Custom Editor Template
 
 Use the DevExtreme [TreeList](https://js.devexpress.com/React/Documentation/Guide/UI_Components/TreeList/Getting_Started_with_TreeList/) component as a template for the *Employee ID* parameter's value editor:
 
@@ -80,7 +80,7 @@ const onCustomizeParameterEditors = React.useCallback(({ args }: { args: any }):
   }, []);
 ```
 
-### Customize Standard Editor
+### Customize a Standard Editor
 
 Use the `CustomizeParameterEditors` event to change the display format and set validation rules for parameters of the `System.DateTime` type:
 - Use the [extendedOptions](https://docs.devexpress.com/XtraReports/js-DevExpress.Analytics.Utils.IEditorInfo?p=netframework#js_devexpress_analytics_utils_ieditorinfo_extendedoptions) property to specify display format in the value editor.
