@@ -82,7 +82,7 @@ const onCustomizeParameterEditors = React.useCallback(({ args }: { args: any }):
 
 ### Customize a Standard Editor
 
-Use the `CustomizeParameterEditors` event to change the display format and set validation rules for parameters of the `System.DateTime` type:
+Use the `CustomizeParameterEditors` event to change the display format and set validation rules for parameters. Check the parameter type and update settings accordingly:
 - Use the [extendedOptions](https://docs.devexpress.com/XtraReports/js-DevExpress.Analytics.Utils.IEditorInfo?p=netframework#js_devexpress_analytics_utils_ieditorinfo_extendedoptions) property to specify display format in the value editor.
 - Use the [validationRules](https://docs.devexpress.com/XtraReports/js-DevExpress.Analytics.Utils.ISerializationInfo?p=netframework#js_devexpress_analytics_utils_iserializationinfo_validationrules) property to set the rules to validate the  value entered in the editor.
 
