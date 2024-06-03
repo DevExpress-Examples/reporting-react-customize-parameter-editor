@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import ReportViewer, { Callbacks, RequestSettings, TemplateEngine } from 'devexpress-reporting-react/dx-report-viewer';
+import ReportViewer, { Callbacks, RequestOptions, TemplateEngine } from 'devexpress-reporting-react/dx-report-viewer';
 import TreeList from 'devextreme-react/tree-list';
 import { IEditorViewModel } from '@devexpress/analytics-core/analytics-widgets-native';
 
@@ -66,7 +66,7 @@ export default function Home() {
 
   return (
     <ReportViewer reportUrl="CustomParameterReport" templateEngine={templateEngine}>
-      <RequestSettings invokeAction="/DXXRDV" host="http://localhost:5000/" />
+      <RequestOptions invokeAction="/DXXRDV" host="http://localhost:5000/" />
       <Callbacks
           CustomizeParameterEditors={onCustomizeParameterEditors}
           BeforeRender={onBeforeRender} />
