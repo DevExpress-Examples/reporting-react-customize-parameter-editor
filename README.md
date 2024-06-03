@@ -20,7 +20,7 @@ In the *backend* folder, run the following command:
 dotnet run
 ```
 
-The server starts at `http://localhost:5000`. To debug the server, run the application in Visual Studio.
+The server uses `http://localhost:5000`. To debug the server, run the application within Visual Studio.
 
 ### Client
 
@@ -31,7 +31,7 @@ npm install
 npm run dev
 ```
 
-Enter the following URL in your browser to view the result: `http://localhost:3000/`. 
+Enter the following URL in your browser to view results: `http://localhost:3000/`. 
 
 ## Implementation Details
 
@@ -84,7 +84,7 @@ const onCustomizeParameterEditors = React.useCallback(({ args }: { args: any }):
 
 Use the `CustomizeParameterEditors` event to change the display format and set validation rules for parameters. Check the parameter type and update settings accordingly:
 - Use the [extendedOptions](https://docs.devexpress.com/XtraReports/js-DevExpress.Analytics.Utils.IEditorInfo?p=netframework#js_devexpress_analytics_utils_ieditorinfo_extendedoptions) property to specify display format in the value editor.
-- Use the [validationRules](https://docs.devexpress.com/XtraReports/js-DevExpress.Analytics.Utils.ISerializationInfo?p=netframework#js_devexpress_analytics_utils_iserializationinfo_validationrules) property to set the rules to validate the  value entered in the editor.
+- Use the [validationRules](https://docs.devexpress.com/XtraReports/js-DevExpress.Analytics.Utils.ISerializationInfo?p=netframework#js_devexpress_analytics_utils_iserializationinfo_validationrules) property to set rules to validate the value entered in the editor.
 
 ```ts
 const onCustomizeParameterEditors = React.useCallback(({ args }: { args: any }): void => {
